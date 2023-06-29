@@ -2,42 +2,51 @@
 
 # compile your heppy using some preinstalled packages
 
+- execute this sequence
+
 ```bash
-cd /global/cfs/cdirs/alice/
-mkdir $USER
-cd $USER
+workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
+mkdir -p $workdir
+cd $workdir
 module load python/3.11
-python3 -m venv mypyjetty
+python3 -m venv pyjettyenv
+source pyjettyenv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install numpy tqdm pyyaml
-source mypyjetty/bin/activate
 
+# load some preinstalled packages
 module use /global/cfs/cdirs/alice/heppy_soft/yasp/software/modules
 module load cmake gsl root/6.28.00 HepMC2/2.06.11 LHAPDF6/6.5.3 pcre2/default swig/4.1.1 HepMC3/3.2.5
 
 git clone https://github.com/matplo/heppy.git
-cd heppy
-./external/fastjet/build.sh
-./external/pythia8/build.sh
-./external/roounfold/build.sh --ezra
-./cpptools/build.sh
+./heppy/external/fastjet/build.sh
+./heppy/external/pythia8/build.sh
+./heppy/external/roounfold/build.sh --ezra
+./heppy/cpptools/build.sh
 ```
-## using precompiled packages for pyjetty
 
-- we will not need yasp (but you can use yasp with the yaspenv.sh script as below)
+- now compile your pyjetty
 
 ```bash
-cd /global/cfs/cdirs/alice/
-mkdir $USER
-cd $USER
-module load python/3.11 cmake
-python3 -m venv mypyjetty
-python -m pip install --upgrade pip
-python -m pip install numpy tqdm pyyaml
-source mypyjetty/bin/activate
-
+module use heppy/modules
+module load heppy
+git clone git@github.com:matplo/pyjetty.git
+./pyjetty/cpptools/build.sh --tglaubermc --tenngen
 ```
 
+- test using an example - a standalone script below (deactivate the python env after compilation of heppy+pyjetty done)
+
+```bash
+workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
+cd $workdir
+module load python/3.11
+source pyjettyenv/bin/activate
+module use /global/cfs/cdirs/alice/heppy_soft/yasp/software/modules
+module load cmake gsl root/6.28.00 HepMC2/2.06.11 LHAPDF6/6.5.3 pcre2/default swig/4.1.1 HepMC3/3.2.5
+module use $workdir/pyjetty/modules
+module load pyjetty
+$PYJETTY_DIR/pyjetty/examples/pythia_gen_fastjet_lund_test.py
+```
 ## from scratch (with all the dependencies)
 
 1. we will use nersc python `module load python/3.11`~
@@ -49,23 +58,22 @@ source mypyjetty/bin/activate
 cd /global/cfs/cdirs/alice/
 mkdir $USER
 cd /global/cfs/cdirs/alice/$USER
-module load python cmake
+module load python/3.11
 git clone https://github.com/matplo/yasp.git
 cd yasp
-./yaspconda.sh
-conda activate /global/cfs/cdirs/alice/$USER/yasp/condayasp
-conda install numpy
+./yaspenv.sh
 ```
 
 - and now we start compiling (some version numbers are overwritten - that's for a reason and ok)
 
 ```bash
-module load gsl
+module load cmake gsl
+python -m pip install numpy
 yasp -mi root --define version=6.28.04
 module load root/6.28.00
 yasp -mi HepMC2/2.06.11
 module load HepMC2/2.06.11
-yasp -mi LHAPDF6/6.5.3 --define --version=6.5.4
+yasp -mi LHAPDF6/6.5.3 --define version=6.5.4
 module load LHAPDF6/6.5.3
 yasp -mi pcre2/default
 module load pcre2/default
@@ -97,7 +105,7 @@ conda activate <your conda env> # could be the one above made with yaspconda.sh
 cd /global/cfs/cdirs/alice/$USER
 git clone https://github.com/matplo/heppy.git
 # make sure this is done
-module use /global/cfs/cdirs/alice/heppy_soft/yasp_conda/software/modules
+module use /global/cfs/cdirs/alice/heppy_soft/yasp/software/modules
 module load gsl root/6.28.00 HepMC2/2.06.11 LHAPDF6/6.5.3 pcre2/default swig/4.1.1 HepMC3/3.2.5
 ./external/fastjet/build.sh
 ./external/pythia8/build.sh
@@ -110,7 +118,7 @@ module load gsl root/6.28.00 HepMC2/2.06.11 LHAPDF6/6.5.3 pcre2/default swig/4.1
 ```bash
 module load python cmake
 conda activate <your conda env>
-module use /global/cfs/cdirs/alice/heppy_soft/yasp_conda/software/modules
+module use /global/cfs/cdirs/alice/heppy_soft/yasp/software/modules
 module load gsl root/6.28.00 HepMC2/2.06.11 LHAPDF6/6.5.3 pcre2/default swig/4.1.1 HepMC3/3.2.5
 module use /global/cfs/cdirs/alice/$USER/heppy/modules
 module load heppy/1.0
