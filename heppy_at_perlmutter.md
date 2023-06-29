@@ -1,5 +1,7 @@
 # How to setup heppy+pyjetty @ perlmutter
 
+Note: for all practical purposes you will only need the first subsection (in general, you should not need to recompile the other packages)
+
 ## compile your heppy+pyjetty using some preinstalled packages
 
 - execute this sequence
