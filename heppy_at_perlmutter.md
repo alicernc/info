@@ -47,9 +47,9 @@ module use $workdir/pyjetty/modules
 module load pyjetty
 $PYJETTY_DIR/pyjetty/examples/pythia_gen_fastjet_lund_test.py
 ```
-## from scratch (with all the dependencies)
+## build *all* needed packages and install heppy
 
-1. we will use nersc python `module load python/3.11`~
+1. we will use nersc python `module load python/3.11`
 1. we will use yasp (something made by mp) `git clone https://github.com/matplo/yasp.git` beacause it is easier to control the building process...
 1. we will compile most of the needed things with yasp OR we can reuse precompiled things - see below
 1. we will compile "the rest" with heppy
