@@ -8,7 +8,7 @@
 
 # some more info
 
-- the strucure follows:
+- the algorithm follows:
   - initialize pythia
   - loop until a given number of jets is collected
   - within the loop turn partons into ghosts and merge with the hadron level particles
