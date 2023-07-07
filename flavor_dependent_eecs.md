@@ -2,7 +2,7 @@
 
 - code: <https://github.com/matplo/pyjetty/blob/master/pyjetty/sandbox/qorg/eec_flavor_dep_example.py>
 - example run: <https://github.com/matplo/pyjetty/blob/master/pyjetty/sandbox/qorg/run_eec_flavor.sh>
-- result: eec distributions <https://www.dropbox.com/s/z1us1xmo7z1lrlx/eec_flavor.draw_Fig_0.png?dl=0>
+- result: eec distributions <https://www.dropbox.com/s/cvvjrk2gzi433ef/eec_flavor.draw_Fig_0.png?dl=0>
     - jet pt distributions <https://www.dropbox.com/s/z1us1xmo7z1lrlx/eec_flavor.draw_Fig_1.png?dl=0>
     - IMPORTANT NOTE: the tagging could be still refined (one can tune what parton's are ghosted for example)
 
