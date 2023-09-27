@@ -17,4 +17,20 @@
 
 # 27 Septemeber 2023
 
-New JE o2 dev meeting [indico here](https://indico.cern.ch/category/16173/) . Meeting time is bad for us
+New JE o2 dev meeting [indico here](https://indico.cern.ch/category/16173/) . Meeting time is bad for us.
+
+Action items:
+- re-engage in organization of the meetings within JE - better timing for us - potentially 7AM Wednesdays
+    - understand what is OUR best time/day - we should make sure at least one of us connects
+    - potential for two meetings? - not ideal
+    - share your best times with the group / MP
+- check the service task assignement for QA
+    - validation of JE framework - comparison to Run 2
+    - underlying event subtraction in AA
+    - QA/QC - two volounteers - real-time based on nightly hyperloop tasks (JE not yet in the daily) - during the run(!) - possibly intensive when data being collected (issue: timing of the reporting - 6:30AM? - daily [indico](https://indico.cern.ch/event/1330828/) )
+- Raymond asked for minutes of the JE o2 meeting - listed up. 
+
+
+
+
+
