@@ -28,6 +28,7 @@ Action items:
     - validation of JE framework - comparison to Run 2
     - underlying event subtraction in AA
     - QA/QC - two volounteers - real-time based on nightly hyperloop tasks (JE not yet in the daily) - during the run(!) - possibly intensive when data being collected (issue: timing of the reporting - 6:30AM? - daily [indico](https://indico.cern.ch/event/1330828/) )
+    - check the penalty of triggering at low-pT R=0.6 jets for high-pT jets - MP
 - Raymond asked for minutes of the JE o2 meeting - listed up.
 
 ## Re trigger threshold for the software trigger
