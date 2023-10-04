@@ -20,13 +20,13 @@ Minutes PWG-JE O2 analysis meeting 04.10.2023
 Present:  Florian Debjani, Filip, Jaehyeok,  Joonsuk, Sidharth, Sweta, Vit, Archita, Abhi, Yubiao, Vertesi, Laura, 
 
 Presentation by Archita on validation of Jet framework (debugging) using official validation framework
-Comparisons of different events for different trigger flags. Weird observations of no changes in nEvents but changes in number of jets and tracks
-Even with no selections significantly different number of tracks and jets (less in O2 than AliPhysics)
-Comment by Vit: maybe not counting selected events the right way? What is also strange is that you get more tracks in O2 with sel7 than with no selection
-Vit: this is not observed for HF validation. Maybe play with AliEventCuts?
-Florian might check to find old slides about validation of emcal correction framework to help Archita
-Florian: could this be related to the fact that ESDs are converted to AO2D instead of AOD? Probably not since HF also starts validation with ESDs and they don’t see it
-Archita will double-check for bugs in the code
+- Comparisons of different events for different trigger flags. Weird observations of no changes in nEvents but changes in number of jets and tracks
+- Even with no selections significantly different number of tracks and jets (less in O2 than AliPhysics)
+- Comment by Vit: maybe not counting selected events the right way? What is also strange is that you get more tracks in O2 with sel7 than with no selection
+- Vit: this is not observed for HF validation. Maybe play with AliEventCuts?
+- Florian might check to find old slides about validation of emcal correction framework to help Archita
+- Florian: could this be related to the fact that ESDs are converted to AO2D instead of AOD? Probably not since HF also starts validation with ESDs and they don’t see it
+- Archita will double-check for bugs in the code
 
 12:25 - End of meeting
 
