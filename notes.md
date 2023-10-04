@@ -7,6 +7,7 @@
 - finalization on the R=0.6 trigger strategy - incomplete - still on MP
 - put together links to QA tasks from JE group
   - Nima working on the code - committed? - not running within automatic QA trains? - follow up on Florian (?)
+- find out how to extract the collected luminosity for Run 3?
 
 ## notes from PWG-O2 meeting
 
