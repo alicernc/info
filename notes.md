@@ -1,5 +1,13 @@
 # 4th of October 2023
 
+## action items
+- work on the data size etc assessmenr ongoing; skimming code being developed - Raymond;
+  - diff link here
+  - code for filtering - Raymond + everyone - ongoing 
+- finalization on the R=0.6 trigger strategy - incomplete - still on MP
+- put together links to QA tasks from JE group
+  - Nima working on the code - committed? - not running within automatic QA trains? - follow up on Florian (?)
+
 ## notes from PWG-O2 meeting
 
 ```
