@@ -1,8 +1,10 @@
 # 4th of October 2023
 
 ## notes from PWG-O2 meeting
+
 ```
 Begin forwarded message:
+```
 
 From: Florian Jonas <fjonas@lbl.gov>
 Subject: PWG-JE O2 analysis meeting minutes 04.10.23
@@ -27,7 +29,6 @@ Florian: could this be related to the fact that ESDs are converted to AO2D inste
 Archita will double-check for bugs in the code
 
 12:25 - End of meeting
-```
 
 # 27 Septemeber 2023
 
