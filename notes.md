@@ -4,6 +4,7 @@
 - work on the data size etc assessmenr ongoing; skimming code being developed - Raymond;
   - [diff link here](https://github.com/AliceO2Group/O2Physics/compare/master...raymondEhlers:O2Physics:lbl-skim)
   - code for filtering - Raymond + everyone - ongoing
+  - [Table design document](run_3_skim_tables.md)
 - finalization on the R=0.6 trigger strategy - incomplete - still on MP
 - put together links to QA tasks from JE group
   - Nima working on the code - committed? - not running within automatic QA trains? - follow up on Florian (?)
@@ -11,6 +12,7 @@
   - Raymond/Preeti: HF should be straightforward - 2- 3-prompt decays to store in table
   - Florian will look into photon code
 - find out how to extract the collected luminosity for Run 3?
+- Created slack channel for more informal discussion. RJE tried to add everyone at the meeting, but probably forgot some folks. [Join here](https://berkeley-heavy-ions.slack.com/archives/C060EQS4X24)
 
 ## notes from PWG-O2 meeting
 
