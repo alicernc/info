@@ -7,6 +7,9 @@
 - finalization on the R=0.6 trigger strategy - incomplete - still on MP
 - put together links to QA tasks from JE group
   - Nima working on the code - committed? - not running within automatic QA trains? - follow up on Florian (?)
+- follow up on the photon and HF skimming
+  - Raymond/Preeti: HF should be straightforward - 2- 3-prompt decays to store in table
+  - Florian will look into photon code
 - find out how to extract the collected luminosity for Run 3?
 
 ## notes from PWG-O2 meeting
