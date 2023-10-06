@@ -82,7 +82,7 @@ cd yasp
 ```bash
 module load cmake gsl
 python -m pip install numpy
-yasp -mi root --define version=6.28.04
+yasp -mi root --define version=6.28.06
 module load root/6.28.00
 yasp -mi HepMC2/2.06.11
 module load HepMC2/2.06.11
