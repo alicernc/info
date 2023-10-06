@@ -26,6 +26,10 @@ git clone https://github.com/matplo/heppy.git
 ./heppy/external/pythia8/build.sh
 ./heppy/external/roounfold/build.sh --ezra
 ./heppy/cpptools/build.sh
+
+# note: use --clean when recompiling...
+# like that: ./heppy/external/fastjet/build.sh --clean
+# ...
 ```
 
 - now compile your pyjetty
