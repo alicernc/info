@@ -21,12 +21,14 @@
 
 - install alisoft on perlmutter - MP
 
-- find out the in-bunch interaction rates for high-lumi pp runs (see ? https://twiki.cern.ch/twiki/bin/viewauth/ALICE/AliceDPG)
+- find out the in-bunch interaction rates for high-lumi pp runs (see ? [AliceDPG](https://twiki.cern.ch/twiki/bin/viewauth/ALICE/AliceDPG))
 
 - find out from Irakli how much *really* we have space on saul.nersc to store our ntuples/tables?
 
 - news from the PWG-JE O2 analysis meetings
-  - Florian takes minutes - see https://github.com/alicernc/info/blob/main/pwg-je-o2-analysis-minutes.md 
+  - Florian takes minutes - see https://github.com/alicernc/info/blob/main/pwg-je-o2-analysis-minutes.md
+  - highlight: tracks associated to multiple events - code to process/collect information about these tracks linked in F's notes [trackToCollisionAssociator](https://github.com/nzardosh/O2Physics/blob/master/Common/TableProducer/trackToCollisionAssociator.cxx); Minjung: HF group looking into it as well
+  - Raymond: remind the conveners about importance of the minutes
  
 # 4th of October 2023
 
