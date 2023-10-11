@@ -1,3 +1,30 @@
+# 11th of October 2023
+
+- finalization on the R=0.6 trigger strategy - incomplete - still on MP
+
+- links to QA tasks from JE group - https://github.com/AliceO2Group/O2Physics/blob/master/PWGJE/Tasks/jetfinderQA.cxx 
+
+- find out how to extract the collected luminosity for Run 3? - on MP
+
+- slack channel is ON
+
+- skimming:
+  - Raymond modified the code and created a pull request
+    - check this also: https://github.com/alicernc/info/blob/main/run_3_skim_tables.md
+    - note JIRA ticket - https://alice.its.cern.ch/jira/browse/PWGJE-24
+  - dependencies: O2 physics installation (need it on hiccup and saul.nersc.gov)
+  - example code how to submit a job to Hyperloop with the skimming code?
+    - link to documentation needed - everyone/anyone please add here
+  - target data sets:
+    - reference run or min bias from from 13 TeV
+    - any good run from 2023 PbPb - highest interaction rate (recent CPass - fill 9237?) and low interaction rate (from early in the run)
+
+- install alisoft on perlmutter - MP
+
+- find out the in-bunch interaction rates for high-lumi pp runs (see ? https://twiki.cern.ch/twiki/bin/viewauth/ALICE/AliceDPG)
+
+- find out from Irakli how much *really* we have space on saul.nersc to store our ntuples/tables?
+ 
 # 4th of October 2023
 
 ## action items
