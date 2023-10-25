@@ -1,6 +1,8 @@
 # 25th of October 2023
 
 - O2 JE meeting - https://indico.cern.ch/event/1339333/
+  - follow up: why only single bit availble for the jet trigger
+  - do we really plan to have two thresholds (low threshold downscaled at ~20; higher at 40 - no downscaling)
 - skim data - https://github.com/alicernc/info/blob/main/run_3_skim_tables.md
 - query: scan over the PbPb data looking for a "nice" jetty event in EMCal - who can help
   - we need event ID's / run ID's etc
