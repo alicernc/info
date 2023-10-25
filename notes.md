@@ -13,6 +13,10 @@
     - "[Phys. Coord. Update] Test productions to investigate TPC performance with improved calibration"
     - [Phys. Coord. Update] QC volunteers from PWGs and "The November of Reconstruction"
 
+- to do:
+  - skim a smaple of the data - see data size
+  - calculate the statistcal gain of Run 3 vs. Run 2 (in particular in the central sample)
+  - follow up on the trigger bit - only single available?
 
 # 11th of October 2023
 
