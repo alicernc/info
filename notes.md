@@ -6,10 +6,13 @@
   - skim a smaple of the data - see data size
     - open pull request from Raymond - https://github.com/AliceO2Group/O2Physics/pull/3590
     - R test on run numbers - see what those 544116 to 544126 are?
+    - these numbers are from TPC presentaion at the recent Tech Board [link](https://indico.cern.ch/event/1202842/contributions/5625704/attachments/2736979/4760271/ASchmah_TPC_TB_19102023_V4.pdf)
+    - let's use a longer run? - this however, also depends on the int. rate.
   - calculate the statistcal gain of Run 3 vs. Run 2 (in particular in the central sample)
     - 1.5/nb in PbPb (0.12/nb 10% central in Run 2)
     - 9/pb pp - this is probably only the high-energy?
   - follow up on the trigger bit - only single available?
+    - second one available for another jet pT threshold - pull request - Raymond will add a link and some text [link]()
     
 # 25th of October 2023
 
