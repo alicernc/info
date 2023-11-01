@@ -1,3 +1,16 @@
+# 1st of November 2023
+
+## data structure / skimming
+
+- to do (followed from last week):
+  - skim a smaple of the data - see data size
+    - open pull request from Raymond - https://github.com/AliceO2Group/O2Physics/pull/3590
+    - R test on run numbers - see what those 544116 to 544126 are?
+  - calculate the statistcal gain of Run 3 vs. Run 2 (in particular in the central sample)
+    - 1.5/nb in PbPb (0.12/nb 10% central in Run 2)
+    - 9/pb pp - this is probably only the high-energy?
+  - follow up on the trigger bit - only single available?
+    
 # 25th of October 2023
 
 - O2 JE meeting - https://indico.cern.ch/event/1339333/
