@@ -12,7 +12,10 @@
     - 1.5/nb in PbPb (0.12/nb 10% central in Run 2)
     - 9/pb pp - this is probably only the high-energy?
   - follow up on the trigger bit - only single available?
-    - second one available for another jet pT threshold - pull request - Raymond will add a link and some text [link]()
+    - second one available for another jet pT threshold - pull request - Raymond will add a link and some text [link in mattermost](https://mattermost.web.cern.ch/alice/pl/t47gpm8szt8ombm5ao38yzznao)
+      > 1) We actually managed to get one extra bit for the trigger! So now we will have 2 thresholds with their own bit each.  [AliceO2Group/O2Physics#3666](https://github.com/AliceO2Group/O2Physics/pull/3666)
+      > 2) The full CTFs for 2022 are not deleted yet but it is unclear if they will survive the PbPb processing (depends on disk space). so its not certain they will be reconstructed and triggered on again but it might happen. This is the latest  info i got but I do not know exactly where they are stored.
+      > 3) a new pass of the reconstruction of the 2023 data will start next week and the triggering on it will start  mid November. So we have about 2 weeks to decide on thresholds and downscales
     
 # 25th of October 2023
 
