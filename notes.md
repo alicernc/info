@@ -8,6 +8,7 @@
     - R test on run numbers - see what those 544116 to 544126 are?
     - these numbers are from TPC presentaion at the recent Tech Board [link](https://indico.cern.ch/event/1202842/contributions/5625704/attachments/2736979/4760271/ASchmah_TPC_TB_19102023_V4.pdf)
     - let's use a longer run? - this however, also depends on the int. rate.
+    - find a run with EMCal for ED including jet in EMCAL
   - calculate the statistcal gain of Run 3 vs. Run 2 (in particular in the central sample)
     - 1.5/nb in PbPb (0.12/nb 10% central in Run 2)
     - 9/pb pp - this is probably only the high-energy?
@@ -16,7 +17,12 @@
       > 1) We actually managed to get one extra bit for the trigger! So now we will have 2 thresholds with their own bit each.  [AliceO2Group/O2Physics#3666](https://github.com/AliceO2Group/O2Physics/pull/3666)
       > 2) The full CTFs for 2022 are not deleted yet but it is unclear if they will survive the PbPb processing (depends on disk space). so its not certain they will be reconstructed and triggered on again but it might happen. This is the latest  info i got but I do not know exactly where they are stored.
       > 3) a new pass of the reconstruction of the 2023 data will start next week and the triggering on it will start  mid November. So we have about 2 weeks to decide on thresholds and downscales
-    
+
+## common skims for the jet group?
+
+  - discuss with CERN/Nima once we are happy?
+  - cross-check with Yale group - their plans / skims?
+
 # 25th of October 2023
 
 - O2 JE meeting - https://indico.cern.ch/event/1339333/
