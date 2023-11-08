@@ -1,3 +1,21 @@
+# 8th of November 2023
+
+## data structure / skimming
+
+- debugging skimming code - now fixed - conflict with another merge - also fixed
+- tests imminent - local tests Florian/Raymond
+- discussion within the PWG-JE? next week - "jet level" skims? - likely not relevant for us
+
+## trigger bit for the jet trigger
+- second bit implemented
+- we do not know if it is active - thresholds?
+
+## to do
+- also, grab one of the files from high-E pp
+- clarification on the high-multiplicity pp - Peter
+- pending discussion Raymond-Nima on skimming
+- longer term - after initial assessment of the skimming - implementation of additional software triggers
+
 # 1st of November 2023
 
 ## data structure / skimming
