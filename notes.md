@@ -5,6 +5,7 @@
 - debugging skimming code - now fixed - conflict with another merge - also fixed
 - tests imminent - local tests Florian/Raymond
 - discussion within the PWG-JE? next week - "jet level" skims? - likely not relevant for us
+- another run numbers to focus on - 544121, 544122, 544123, 544124 - this is from [presentation](https://indico.cern.ch/event/1344510/contributions/5659031/attachments/2747805/4781811/PWGLF_Strangeness_20231107_upd.pdf)
 
 ## trigger bit for the jet trigger
 - second bit implemented
