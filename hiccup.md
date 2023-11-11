@@ -11,7 +11,7 @@ workdir=/software/users/$USER/mypyjetty
 ```
 
 ```
-workdir=/software/$USER/mypyjetty
+workdir=/software/users/$USER/mypyjetty
 mkdir -p $workdir
 cd $workdir
 python3 -m virtualenv pyjettyenv
