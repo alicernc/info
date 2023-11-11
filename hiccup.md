@@ -11,7 +11,7 @@
     - modify as needed (workdir...) and `chmod +x build_pyjetty_heppy_preinst_hic.sh` and run `./build_pyjetty_heppy_preinst_hic.sh`
     - see the `.bashrc` function below for the next time around...
 
-- compile your heppy
+### compile your heppy
 - note we will use `$workdir` a lot...
 
 ```
@@ -42,7 +42,7 @@ git clone https://github.com/matplo/heppy.git
 # ...
 ```
 
-- now compile your pyjetty
+### now compile your pyjetty
 
 ```
 cd ${workdir}
@@ -55,7 +55,9 @@ git clone git@github.com:matplo/pyjetty.git
 ./pyjetty/cpptools/build.sh --tglaubermc --tenngen
 ```
 
-- test using an example - a standalone script below (deactivate the python env after compilation of heppy+pyjetty done)
+### test using an example - a standalone script below (deactivate the python env after compilation of heppy+pyjetty done)
+
+- recommended: use a new shell/terminal
 
 ```
 cd $workdir
