@@ -1,3 +1,7 @@
+#!/bin/bash
+
+save_dir=${PWD}
+
 workdir=/software/users/$USER/mypyjetty
 
 mkdir -p $workdir
@@ -36,3 +40,4 @@ module load pyjetty
 # test
 $PYJETTY_DIR/pyjetty/examples/pythia_gen_fastjet_lund_test.py
 
+cd ${save_dir}
