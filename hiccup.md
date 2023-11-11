@@ -61,7 +61,7 @@ $PYJETTY_DIR/pyjetty/examples/pythia_gen_fastjet_lund_test.py
 
 ## setup for next login...
 
-- consider setting up your `$HOME/.bashrc` with a function that loads all whats needed - add the following to your `$HOME/.bashrc` and execute `pyjetty_load` whenever you need to use your pyjetty...
+- consider setting up your `$HOME/.bashrc` with a function that loads all whats needed - add the following to your `$HOME/.bashrc` and execute `pyjetty_load` whenever you need to use your pyjetty at your next login (note, the contents of the function is also good for your slurm scripts)...
 
 ```
 function pyjetty_load()
@@ -96,7 +96,7 @@ yasp -mi HepMC3/3.2.5 --define version=3.2.6
 module load HepMC3/3.2.5
 ```
 
-### optional (within heppy)
+### optional (they will be also within heppy)
 
 ```
 yasp -mi fastjet/3.4.0
