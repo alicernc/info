@@ -4,6 +4,12 @@
 
 - compile your heppy
 
+- note we will use `$workdir` a lot...
+
+```
+workdir=/software/users/$USER/mypyjetty
+```
+
 ```
 workdir=/software/$USER/mypyjetty
 mkdir -p $workdir
@@ -45,7 +51,6 @@ git clone git@github.com:matplo/pyjetty.git
 
 ```
 cd $workdir
-## module load python/3.11 - not needed we will use systems python3 - change 5-Oct-2023
 source pyjettyenv/bin/activate
 module use /software/users/ploskon/yasp/software/modules
 module load root HepMC2 LHAPDF6 HepMC3
@@ -54,10 +59,32 @@ module load pyjetty
 $PYJETTY_DIR/pyjetty/examples/pythia_gen_fastjet_lund_test.py
 ```
 
+## setup for next login...
+
+- consider setting up your `$HOME/.bashrc` with a function that loads all whats needed - add the following to your `$HOME/.bashrc` and execute `pyjetty_load` whenever you need to use your pyjetty...
+
+```
+function pyjetty_load()
+{
+    workdir=/software/users/$USER/mypyjetty
+    source $workdir/pyjettyenv/bin/activate
+    module use /software/users/ploskon/yasp/software/modules
+    module load root HepMC2 LHAPDF6 HepMC3
+    module use $workdir/pyjetty/modules
+    module load pyjetty
+}
+export -f pyjetty_load
+```
+
 ## intstalling heppy with yasp - all packages
 
 ```
-module load cmake gsl
+git clone https://github.com/matplo/yasp.git
+cd yasp
+./yaspenv.sh
+```
+
+```
 python -m pip install numpy
 yasp -mi root/default --define version=6.28.06
 module load root/default
