@@ -2,8 +2,16 @@
 
 ## installing heppy with a few precompiled packages
 
-- compile your heppy
+- note: the listed below steps to install heppy/pyjetty with preinstalled packages are put together in a script
+    - https://github.com/alicernc/info/blob/main/scripts/build_pyjetty_heppy_preinst_hic.sh
+    - get it with (wget for example):
+    ```
+        wget https://raw.githubusercontent.com/alicernc/info/main/scripts/build_pyjetty_heppy_preinst_hic.sh
+    ```
+    - modify as needed (workdir...) and `chmod +x build_pyjetty_heppy_preinst_hic.sh` and run `./build_pyjetty_heppy_preinst_hic.sh`
+    - see the `.bashrc` function below for the next time around...
 
+- compile your heppy
 - note we will use `$workdir` a lot...
 
 ```
