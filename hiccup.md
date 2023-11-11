@@ -20,7 +20,7 @@ python -m pip install --upgrade pip
 python -m pip install numpy tqdm pyyaml
 
 # load some preinstalled packages
-module use /software/users/ploskon/yasp/software/modules
+module use /software/users/alice/yasp/software/modules
 module load root HepMC2 LHAPDF6 HepMC3
 
 git clone https://github.com/matplo/heppy.git
@@ -114,5 +114,3 @@ module load pythia8/8308
 ```
  yasp -mi sherpa/2.2.15 --define extra_opt=--disable-pyext
 ```
-
-sqlite3
