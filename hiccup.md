@@ -9,6 +9,24 @@
     - please remove things you do not need anymore
 - use `df -h <some_directory>` to know how much space you are using
 
+## slurm
+
+- we have 3 partitions (queues)
+    - use quick if something is quick (<few hours)...
+    - std is a one day job
+    - long is for very long jobs
+
+```
+> sinfo
+PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
+quick        up    4:00:00      1  down* hiccup6
+quick        up    4:00:00      6   idle hiccup1n,hiccup2n,hiccup3n,hiccup4n,hiccup5n,hiccup8n
+std          up 1-00:00:00      1  down* hiccup6
+std          up 1-00:00:00      6   idle hiccup1n,hiccup2n,hiccup3n,hiccup4n,hiccup5n,hiccup8n
+long*        up   infinite      1  down* hiccup6
+long*        up   infinite      6   idle hiccup1n,hiccup2n,hiccup3n,hiccup4n,hiccup5n,hiccup8n
+```
+
 ## installing heppy with a few precompiled packages
 
 - note: the listed below steps to install heppy/pyjetty with preinstalled packages are put together in a script
