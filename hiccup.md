@@ -1,5 +1,14 @@
 # info on hiccup
 
+## storage, directories etc
+
+- please use `/software/users` for your software installations 
+    - we have 2TB so please remove unused / old stuff
+- let's try to keep `/home` relatively tidy (although the space was increased to 4TB)
+- please use `/rstorage` for your data, analysis output, large footpring things, etc
+    - please remove things you do not need anymore
+- use `df -h <some_directory>` to know how much space you are using
+
 ## installing heppy with a few precompiled packages
 
 - note: the listed below steps to install heppy/pyjetty with preinstalled packages are put together in a script
