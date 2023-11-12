@@ -113,6 +113,14 @@ function pyjetty_load()
 export -f pyjetty_load
 ```
 
+- alternatively use a script `/software/users/alice/activate_pyjetty.sh` - like this:
+
+```
+source /software/users/alice/activate_pyjetty.sh
+```
+
+    - copy to your own dir and adjust if needed
+
 ## intstalling heppy with yasp - all packages
 
 ```
