@@ -61,7 +61,7 @@ module load root HepMC2 LHAPDF6 HepMC3
 git clone https://github.com/matplo/heppy.git
 ./heppy/external/fastjet/build.sh
 ./heppy/external/pythia8/build.sh
-./heppy/external/roounfold/build.sh --ezra
+./heppy/external/roounfold/build.sh --heppy
 ./heppy/cpptools/build.sh
 
 # note: use --clean when recompiling...
