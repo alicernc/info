@@ -1,3 +1,21 @@
+# 13th of December 2023
+
+## data structure / skimming
+
+- status: iterating on the pull request - problematic details - running on hyperloop - needs redefinition of an unique ID
+  - storing additional information about the beam x-ing? - issue with merger/merging (?)
+- do we have a sample?
+  - running over single file AO2D 3.6GB -> 32MB (~110 reduction) - PbPb minimum bias
+
+## triggre but followup?
+- two bits implemented - 30/60 GeV/c with some downscaling for 30 - code in development
+- JE meeting discussion - https://indico.cern.ch/event/1355635/
+
+## to do
+- file from high-energy pp run
+- clarification on the high-multiplicity in pp - Peter
+- skimming Raymond-Nima+Mateusz follow up needed
+
 # 8th of November 2023
 
 ## data structure / skimming
