@@ -7,7 +7,7 @@
 - do we have a sample?
   - running over single file AO2D 3.6GB -> 32MB (~110 reduction) - PbPb minimum bias
 
-## triggre but followup?
+## trigger but followup?
 - two bits implemented - 30/60 GeV/c with some downscaling for 30 - code in development
 - JE meeting discussion - https://indico.cern.ch/event/1355635/
 
