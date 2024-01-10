@@ -1,3 +1,5 @@
+Next meeting on 17th of January 2024
+
 # 13th of December 2023
 
 ## data structure / skimming
