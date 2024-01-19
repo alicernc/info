@@ -1,7 +1,5 @@
 # How to herwig @ perlmutter
 
-Note: for all practical purposes you will only need the first subsection (in general, you should not need to recompile the other packages)
-
 Herwig compilation needed a newer python version (note we may want to migrate to it at some point also for heppy/pyjetty)
 
 ## first time setup
