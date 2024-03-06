@@ -1,4 +1,7 @@
-Next meeting on 17th of January 2024
+# 6th of March 2024
+
+- update on code proposal - Nima et al
+- discussion moved to the ALICE-RNC group meeting
 
 # 13th of December 2023
 
