@@ -34,7 +34,9 @@ long*        up   infinite      6   idle hiccup1n,hiccup2n,hiccup3n,hiccup4n,hic
 ```
 # ... setup things...
 
-TEMP_OUTPUT_DIRECTORY="/scratch/$USER/${SLURM_ARRAY_JOB_ID}"
+# modify as needed but keep /scratch/u/$USER in front
+TEMP_OUTPUT_DIRECTORY="/scratch/u/$USER/${SLURM_ARRAY_JOB_ID}"
+# modify as needed
 RSTORAGE_OUTPUT_DIRECTORY="/rstorage/$USER/${SLURM_ARRAY_JOB_ID}"
 
 # from now on operate on the node's local /scratch ...
