@@ -27,6 +27,26 @@ long*        up   infinite      1  down* hiccup6
 long*        up   infinite      6   idle hiccup1n,hiccup2n,hiccup3n,hiccup4n,hiccup5n,hiccup8n
 ```
 
+## running jobs - use local `/scratch`
+
+- here is an example of a slurm script that uses local scratch for a lot of I/O - saving resources on disk server (a lot of I/O to DS makes things inefficient for your jobs and others.. ;-)
+
+```
+# ... setup things...
+
+TEMP_OUTPUT_DIRECTORY="/scratch/$USER/${SLURM_ARRAY_JOB_ID}"
+RSTORAGE_OUTPUT_DIRECTORY="/rstorage/$USER/${SLURM_ARRAY_JOB_ID}"
+
+mkdir -p ${TEMP_OUTPUT_DIRECTORY}
+my_script.py --output ${TEMP_OUTPUT_DIRECTORY}
+
+# ... do something else on an ouput directory
+
+mkdir -p ${RSTORAGE_OUTPUT_DIRECTORY}
+cp -r ${TEMP_OUTPUT_DIRECTORY}/* ${RSTORAGE_OUTPUT_DIRECTORY}
+
+```
+
 ## installing heppy with a few precompiled packages
 
 - note: the listed below steps to install heppy/pyjetty with preinstalled packages are put together in a script
