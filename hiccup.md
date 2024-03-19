@@ -48,6 +48,16 @@ my_script.py --output ${TEMP_OUTPUT_DIRECTORY}
 mkdir -p ${RSTORAGE_OUTPUT_DIRECTORY}
 cp -r ${TEMP_OUTPUT_DIRECTORY}/* ${RSTORAGE_OUTPUT_DIRECTORY}/
 
+# in general we'd want to delete the temp dir after job is done
+# make sure the copy was succesful...
+
+if [ $? -eq 0 ]; then
+    echo "copy done - removing the temp output dir."
+    rm -rf ${TEMP_OUTPUT_DIRECTORY}
+else
+    echo "The copy command failed - not deleting the temp output dir."
+fi
+
 ```
 
 ## installing heppy with a few precompiled packages
