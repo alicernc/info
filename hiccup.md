@@ -37,13 +37,14 @@ long*        up   infinite      6   idle hiccup1n,hiccup2n,hiccup3n,hiccup4n,hic
 TEMP_OUTPUT_DIRECTORY="/scratch/$USER/${SLURM_ARRAY_JOB_ID}"
 RSTORAGE_OUTPUT_DIRECTORY="/rstorage/$USER/${SLURM_ARRAY_JOB_ID}"
 
+# from now on operate on the node's local /scratch ...
 mkdir -p ${TEMP_OUTPUT_DIRECTORY}
 my_script.py --output ${TEMP_OUTPUT_DIRECTORY}
-
 # ... do something else on an ouput directory
 
+# now copy files/results to /rstorage
 mkdir -p ${RSTORAGE_OUTPUT_DIRECTORY}
-cp -r ${TEMP_OUTPUT_DIRECTORY}/* ${RSTORAGE_OUTPUT_DIRECTORY}
+cp -r ${TEMP_OUTPUT_DIRECTORY}/* ${RSTORAGE_OUTPUT_DIRECTORY}/
 
 ```
 
