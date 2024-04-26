@@ -122,7 +122,7 @@ git clone git@github.com:matplo/pyjetty.git
 ```
 cd $workdir
 source pyjettyenv/bin/activate
-module use /software/users/ploskon/yasp/software/modules
+module use /software/users/alice/yasp/software/modules
 module load root HepMC2 LHAPDF6 HepMC3
 module use $workdir/pyjetty/modules
 module load pyjetty
@@ -138,7 +138,8 @@ function pyjetty_load()
 {
     workdir=/software/users/$USER/mypyjetty
     source $workdir/pyjettyenv/bin/activate
-    module use /software/users/ploskon/yasp/software/modules
+    module use /software/users/alice/yasp/software/modules
+
     module load root HepMC2 LHAPDF6 HepMC3
     module use $workdir/pyjetty/modules
     module load pyjetty
