@@ -109,7 +109,7 @@ cd ${workdir}
 module use ${workdir}/heppy/modules
 module load heppy
 # two lines below if new shell/terminal
-/software/users/alice/yasp/software/modules
+module use /software/users/alice/yasp/software/modules
 module load root HepMC2 LHAPDF6 HepMC3
 git clone git@github.com:matplo/pyjetty.git
 ./pyjetty/cpptools/build.sh --tglaubermc --tenngen
