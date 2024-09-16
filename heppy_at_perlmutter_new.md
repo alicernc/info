@@ -40,6 +40,8 @@ cd ${workdir}
 module load python/3.11
 python3 -m venv pyjettyenv
 source pyjettyenv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install numpy tqdm pyyaml
 module use /global/cfs/cdirs/alice/ploskon/mypyjetty-2024-09-16/heppy
 module load heppy/1.0
 # ...
