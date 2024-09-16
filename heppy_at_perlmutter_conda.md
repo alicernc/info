@@ -56,7 +56,7 @@ module load HepMC3/3.2.5
 - note: they are compatible with cppyy use - see <https://github.com/matplo/heppyy>
 
 ```bash
-yacp -mi fastjet/3.4.0
+yasp -mi fastjet/3.4.0
 module load fastjet/3.4.0
 yasp -i fjcontrib/1.051
 yasp -mi pythia8/8308
