@@ -30,20 +30,20 @@ git clone https://github.com/matplo/heppy.git
 - note: you may reuse MP's heppy for your pyjetty installation/use...
   - it is at `/global/cfs/cdirs/alice/ploskon/mypyjetty-2024-09-16/heppy`
   - so, when compiling pyjetty below just create your own pyenv; load my heppy and compile pyjetty...
-  - ```
-	python3 -m venv pyjettyenv
-  workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
-  # or you can create a TODAY directory for this version of code
-  # workdir=/global/cfs/cdirs/alice/$USER/mypyjetty-$(date +%Y-%m-%d)
-  mkdir -p $workdir
-  cd $workdir
-  module load python/3.11
-  python3 -m venv pyjettyenv
-  source pyjettyenv/bin/activate
-	module use /global/cfs/cdirs/alice/ploskon/mypyjetty-2024-09-16/heppy
-	module load heppy/1.0
-	...
-	```
+```
+python3 -m venv pyjettyenv
+workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
+# or you can create a TODAY directory for this version of code
+# workdir=/global/cfs/cdirs/alice/$USER/mypyjetty-$(date +%Y-%m-%d)
+mkdir -p $workdir
+cd $workdir
+module load python/3.11
+python3 -m venv pyjettyenv
+source pyjettyenv/bin/activate
+module use /global/cfs/cdirs/alice/ploskon/mypyjetty-2024-09-16/heppy
+module load heppy/1.0
+# ...
+```
 
 # pyjetty
 
