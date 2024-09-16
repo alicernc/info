@@ -27,6 +27,24 @@ git clone https://github.com/matplo/heppy.git
 ./heppy/cpptools/build.sh
 ```
 
+- note: you may reuse MP's heppy for your pyjetty installation/use...
+  - it is at `/global/cfs/cdirs/alice/ploskon/mypyjetty-2024-09-16/heppy`
+  - so, when compiling pyjetty below just create your own pyenv; load my heppy and compile pyjetty...
+  - ```
+	python3 -m venv pyjettyenv
+  workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
+  # or you can create a TODAY directory for this version of code
+  # workdir=/global/cfs/cdirs/alice/$USER/mypyjetty-$(date +%Y-%m-%d)
+  mkdir -p $workdir
+  cd $workdir
+  module load python/3.11
+  python3 -m venv pyjettyenv
+  source pyjettyenv/bin/activate
+	module use /global/cfs/cdirs/alice/ploskon/mypyjetty-2024-09-16/heppy
+	module load heppy/1.0
+	...
+	```
+
 # pyjetty
 
 ```
@@ -37,7 +55,7 @@ cd ${workdir}
 module load python/3.11
 source pyjettyenv/bin/activate
 module use ${workdir}/heppy/modules
-module load heppy
+module load heppy/1.0
 
 module use /global/cfs/cdirs/alice/heppy_soft/15-09-2024/yasp/software/modules
 module load cmake gsl root/default HepMC2/2.06.11 LHAPDF6/6.5.4 pcre2/default swig/4.1.1 HepMC3/3.2.5
