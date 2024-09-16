@@ -2,13 +2,18 @@
 
 - note: lines using Today's date `$(date +%Y-%m-%d)` for the new workdir are commented out with `#` ... you can use those for compilation on a given day but of course you do not want to compile these every day... 
 
-## build heppy
+## first a workdir...
 
 ```
 workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
 # or you can create a TODAY directory for this version of code
 # workdir=/global/cfs/cdirs/alice/$USER/mypyjetty-$(date +%Y-%m-%d)
 mkdir -p $workdir
+```
+
+## build heppy
+
+```
 cd $workdir
 module load python/3.11
 python3 -m venv pyjettyenv
@@ -31,12 +36,7 @@ git clone https://github.com/matplo/heppy.git
   - it is at `/global/cfs/cdirs/alice/ploskon/mypyjetty-2024-09-16/heppy`
   - so, when compiling pyjetty below just create your own pyenv; load my heppy and compile pyjetty...
 ```
-python3 -m venv pyjettyenv
-workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
-# or you can create a TODAY directory for this version of code
-# workdir=/global/cfs/cdirs/alice/$USER/mypyjetty-$(date +%Y-%m-%d)
-mkdir -p $workdir
-cd $workdir
+cd ${workdir}
 module load python/3.11
 python3 -m venv pyjettyenv
 source pyjettyenv/bin/activate
@@ -49,9 +49,6 @@ module load heppy/1.0
 
 - here we continue with *your* heppy install (as in the heppy build above not the alternative)... 
 ```
-workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
-# or you can create a TODAY directory for this version of code
-# workdir=/global/cfs/cdirs/alice/$USER/mypyjetty-$(date +%Y-%m-%d)
 cd ${workdir}
 module load python/3.11
 source pyjettyenv/bin/activate
@@ -68,10 +65,6 @@ git clone git@github.com:matplo/pyjetty.git
 # Use the new pyjetty
 
 ```
-workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
-# or you want to use the TODAY directory for this version of code 
-# remember to change the code below to actual directory name if using... `$(date +%Y-%m-%d)` changes every day...
-# workdir=/global/cfs/cdirs/alice/$USER/mypyjetty-$(date +%Y-%m-%d)
 module load python/3.11
 source ${workdir}/pyjettyenv/bin/activate
 module use /global/cfs/cdirs/alice/heppy_soft/15-09-2024/yasp/software/modules
