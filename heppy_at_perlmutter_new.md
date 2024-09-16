@@ -45,8 +45,9 @@ module load heppy/1.0
 # ...
 ```
 
-# pyjetty
+## pyjetty
 
+- here we stay with the your heppy install (as in the heppy built)... 
 ```
 workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
 # or you can create a TODAY directory for this version of code
