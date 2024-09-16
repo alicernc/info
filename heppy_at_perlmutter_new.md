@@ -2,7 +2,7 @@
 
 - note: lines using Today's date `$(date +%Y-%m-%d)` for the new workdir are commented out with `#` ... you can use those for compilation on a given day but of course you do not want to compile these every day... 
 
-## heppy
+## build heppy
 
 ```
 workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
@@ -27,7 +27,7 @@ git clone https://github.com/matplo/heppy.git
 ./heppy/cpptools/build.sh
 ```
 
-- note: you may reuse MP's heppy for your pyjetty installation/use...
+- note - an alternative: you may reuse MP's heppy for your pyjetty installation/use...
   - it is at `/global/cfs/cdirs/alice/ploskon/mypyjetty-2024-09-16/heppy`
   - so, when compiling pyjetty below just create your own pyenv; load my heppy and compile pyjetty...
 ```
@@ -45,9 +45,9 @@ module load heppy/1.0
 # ...
 ```
 
-## pyjetty
+## build pyjetty
 
-- here we stay with the your heppy install (as in the heppy built)... 
+- here we continue with *your* heppy install (as in the heppy build above not the alternative)... 
 ```
 workdir=/global/cfs/cdirs/alice/$USER/mypyjetty
 # or you can create a TODAY directory for this version of code
