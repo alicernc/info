@@ -46,7 +46,7 @@ cd ${savedir}
 # setup the environment 
 
 - do this in every new terminal...
-- environment setup - execute this (to modify copy `/software/users/alice/run3/setenv.sh`
+- environment setup - execute this (to modify copy `/software/users/alice/run3/setenv.sh` and adopt to your own needs)
 
 ```
 #!/bin/bash
