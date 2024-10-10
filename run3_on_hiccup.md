@@ -83,3 +83,6 @@ cd $ALIAN_SRC/alian/sandbox/
 ```
 - make your own analysis... 
 - note: we are developing - the analysis loop may change...
+- sandbox/analysis link https://github.com/matplo/alian/blob/main/alian/sandbox/analysis.py
+- sandbox/generate_analysis_yaml_config.py - https://github.com/matplo/alian/blob/main/alian/sandbox/generate_analysis_yaml_config.py
+
