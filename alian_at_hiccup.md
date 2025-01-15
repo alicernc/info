@@ -10,6 +10,20 @@ chmod +x ./install_my_alian_hiccup.sh
 ```
 - the steps below should do the same
 
+## to run something within the environment
+
+```
+workdir=/software/users/$USER/myalian
+${workdir}/yasp/yaspenv.sh <command or shell script>
+```
+
+- or to simply enter the env
+
+```
+${workdir}/yasp/yaspenv.sh
+```
+
+# the long way...
 ## first a workdir...
 
 ```
