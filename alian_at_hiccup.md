@@ -5,7 +5,7 @@
 - grab the `install_my_alian_hiccup.sh` [link](https://github.com/alicernc/info/blob/main/install_my_alian_hiccup.sh) in this repository and execute it
 ```
 curl -o install_my_alian_hiccup.sh https://raw.githubusercontent.com/alicernc/info/main/install_my_alian_hiccup.sh
-chmod +x <thefile>
+chmod +x ./install_my_alian_hiccup.sh
 ./install_my_alian_hiccup.sh
 ```
 - the steps below should do the same
