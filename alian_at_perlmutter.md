@@ -42,13 +42,16 @@ git clone https://github.com/matplo/alian.git
 # Use the new code
 
 ```
-module load cmake pytorch/2.3.1
-${workdir}/yasp/yaspenv.sh 
-module use /global/cfs/cdirs/alice/ploskon/yasp/software/modules
-module load swig/4.1.1 bundle/hepbase 
+workdir=/global/cfs/cdirs/alice/$USER/myalian
+${workdir}/yasp/condaenv.sh 
+
+module use /global/cfs/cdirs/alice/ploskon/software/yasp/conda_env_yasp_python_3.11/yasp/software/modules
+module load pcre2/default swig/4.1.1 bundle/hepbase-conda
+
 module unload yasp
-module use ./yasp/software/modules
+module use ./yasp/conda_env_yasp_python_3.11/yasp/software/modules
 module load yasp
+
 module load heppyy/current
 module load alian/current
 ```
