@@ -21,13 +21,14 @@ git clone https://github.com/matplo/yasp.git
 
 ### within the condaenv (after calling condaenv.sh)
 ```
+workdir=/global/cfs/cdirs/alice/$USER/myalian
 cd $workdir
 
 module use /global/cfs/cdirs/alice/ploskon/software/yasp/conda_env_yasp_python_3.11/yasp/software/modules
 module load pcre2/default swig/4.1.1 bundle/hepbase-conda
 
 module unload yasp
-module use ./yasp/software/modules
+module use ./yasp/conda_env_yasp_python_3.11/yasp/software/modules
 module load yasp
 
 git clone https://github.com/matplo/heppyy.git
