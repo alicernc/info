@@ -63,9 +63,9 @@ workdir=/global/cfs/cdirs/alice/$USER/myalian
 ${workdir}/alian/alian/sandbox/jet_axis/pythia_jet_axis.py
 ```
 
-# useful tip
+# Useful tip
 
-- you can edit `$workdir/yasp/conda_env_yasp_python_3.11/.venvstartup.sh` file and add the following to it such that the env starts with everything setup...
+- you can edit `$workdir/yasp/conda_env_yasp_python_3.11/.venvstartup.sh` file and add the following to it such that the env starts with everything setup... - from OUTSIDE of condaenv...
 ```
 # ... some existing stuff
 # add what's below
