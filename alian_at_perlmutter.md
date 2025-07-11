@@ -45,7 +45,7 @@ git clone https://github.com/matplo/alian.git
 workdir=/global/cfs/cdirs/alice/$USER/myalian
 ${workdir}/yasp/condaenv.sh 
 
-module use /global/cfs/cdirs/alice/ploskon/software/yasp/conda_env_yasp_python_3.11/yasp/software/modules
+module use /global/cfs/cdirs/alice/software/yasp/conda_env_yasp_python_3.11/yasp/software/modules
 module load pcre2/default swig/4.1.1 bundle/hepbase-conda
 
 module unload yasp
