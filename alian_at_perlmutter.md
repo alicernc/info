@@ -32,7 +32,7 @@ module use ./yasp/conda_env_yasp_python_3.11/yasp/software/modules
 module load yasp
 
 git clone https://github.com/matplo/heppyy.git
-./heppyy/instal_with_yasp.sh
+./heppyy/install_with_yasp.sh
 module load heppyy/current
 
 git clone https://github.com/matplo/alian.git
