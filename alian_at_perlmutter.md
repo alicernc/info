@@ -63,6 +63,33 @@ workdir=/global/cfs/cdirs/alice/$USER/myalian
 ${workdir}/alian/alian/sandbox/jet_axis/pythia_jet_axis.py
 ```
 
+# useful tip
+
+- you can edit `$workdir/yasp/conda_env_yasp_python_3.11/.venvstartup.sh` file and add the following to it such that the env starts with everything setup...
+```
+# ... some existing stuff
+# add what's below
+
+workdir=/global/cfs/cdirs/alice/$USER/myalian
+
+module use /global/cfs/cdirs/alice/ploskon/software/yasp/conda_env_yasp_python_3.11/yasp/software/modules
+module load pcre2/default swig/4.1.1 bundle/hepbase-conda
+
+module unload yasp
+module use $workdir/yasp/conda_env_yasp_python_3.11/yasp/software/modules
+module load yasp
+
+module load heppyy/current
+module load alian/current
+
+```
+
+- then you can directly run your python code using heppyy and alian in the env...
+
+```
+${workdir}/yasp/condaenv.sh ${workdir}/alian/alian/sandbox/jet_axis/pythia_jet_axis.py
+```
+
 
 # Build your new alian -- OBSOLETE
 
