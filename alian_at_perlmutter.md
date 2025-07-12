@@ -25,7 +25,7 @@ workdir=/global/cfs/cdirs/alice/$USER/myalian
 cd $workdir
 
 module use /global/cfs/cdirs/alice/software/yasp/software/modules
-module load pcre2/default swig/4.1.1 bundle/hepbase-conda
+module load pcre2/default swig/4.1.1 bundle/hepbase
 
 module unload yasp
 module use ./yasp/conda_env_yasp_python_3.11/yasp/software/modules
