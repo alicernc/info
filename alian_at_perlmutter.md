@@ -24,19 +24,21 @@ git clone https://github.com/matplo/yasp.git
 workdir=/global/cfs/cdirs/alice/$USER/myalian
 cd $workdir
 
+module unload yasp
+
 module use /global/cfs/cdirs/alice/software/yasp/software/modules
 module load pcre2/default swig/4.1.1 bundle/hepbase
 
-module unload yasp
-module use ./yasp/conda_env_yasp_python_3.11/yasp/software/modules
+module use $workdir/yasp/software/modules
 module load yasp
 
 git clone https://github.com/matplo/heppyy.git
-./heppyy/install_with_yasp.sh
+./heppyy/install_with_yasp.sh 
 module load heppyy/current
 
 git clone https://github.com/matplo/alian.git
-./alian/install_with_yasp.sh
+./alian/install_with_yasp.sh 
+module load 
 ```
 
 # Use the new code
