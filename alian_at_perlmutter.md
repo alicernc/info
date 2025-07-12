@@ -38,7 +38,7 @@ module load heppyy/current
 
 git clone https://github.com/matplo/alian.git
 ./alian/install_with_yasp.sh 
-module load 
+module load alian/current
 ```
 
 # Use the new code
@@ -47,15 +47,16 @@ module load
 workdir=/global/cfs/cdirs/alice/$USER/myalian
 ${workdir}/yasp/condaenv.sh 
 
-module use /global/cfs/cdirs/alice/software/yasp/conda_env_yasp_python_3.11/yasp/software/modules
-module load pcre2/default swig/4.1.1 bundle/hepbase-conda
-
 module unload yasp
-module use ./yasp/conda_env_yasp_python_3.11/yasp/software/modules
-module load yasp
 
+module use /global/cfs/cdirs/alice/software/yasp/software/modules
+module load pcre2/default swig/4.1.1 bundle/hepbase
+
+module use $workdir/yasp/software/modules
+module load yasp
 module load heppyy/current
 module load alian/current
+
 ```
 
 - run a test
@@ -74,13 +75,13 @@ ${workdir}/alian/alian/sandbox/jet_axis/pythia_jet_axis.py
 
 workdir=/global/cfs/cdirs/alice/$USER/myalian
 
-module use /global/cfs/cdirs/alice/ploskon/software/yasp/conda_env_yasp_python_3.11/yasp/software/modules
-module load pcre2/default swig/4.1.1 bundle/hepbase-conda
-
 module unload yasp
-module use $workdir/yasp/conda_env_yasp_python_3.11/yasp/software/modules
-module load yasp
 
+module use /global/cfs/cdirs/alice/software/yasp/software/modules
+module load pcre2/default swig/4.1.1 bundle/hepbase
+
+module use $workdir/yasp/software/modules
+module load yasp
 module load heppyy/current
 module load alian/current
 
