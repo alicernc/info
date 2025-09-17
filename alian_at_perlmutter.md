@@ -20,6 +20,7 @@ git clone https://github.com/matplo/yasp.git
 ```
 
 ### within the condaenv (after calling condaenv.sh)
+Note that, even though we defined `workdir` already, we need to define it again inside the environment since conda will remove it once you enter.
 ```
 workdir=/global/cfs/cdirs/alice/$USER/myalian
 cd $workdir
@@ -47,6 +48,7 @@ module load alian/current
 workdir=/global/cfs/cdirs/alice/$USER/myalian
 ${workdir}/yasp/condaenv.sh 
 
+workdir=/global/cfs/cdirs/alice/$USER/myalian
 module unload yasp
 
 module use /global/cfs/cdirs/alice/software/yasp/software/modules
