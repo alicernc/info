@@ -117,7 +117,7 @@ shifter --entrypoint --image=tch285/alian-base
 git clone https://github.com/matplo/yasp.git
 
 ./yasp/yaspenv.sh
-python3 -m pip install numpy tqdm pyyaml # add more packages here if desired
+python3 -m pip install numpy tqdm pandas uproot pyyaml # add more packages here if desired
 yasp -mi bundle/hepbase --opt rootspec=ubuntu22.04 n_cores=5
 
 module load bundle/hepbase
