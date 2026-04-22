@@ -11,7 +11,7 @@ I (RJE) encourage you to look through the CBorg website - they have all kinds of
 2. [Get a CBorg API key](https://cborg.lbl.gov/api_request/)
 3. [Setup via the CBorg docs on using Claude Code](https://cborg.lbl.gov/tools_claudecode/).
 
-> [!INFO]
+> [!NOTE]
 > Instead of having to define those env variables in your current environment (which can be annoying to maintain), you can add them to you Claude Code settings stored at `~/.claude/settings.json`.
 
 
