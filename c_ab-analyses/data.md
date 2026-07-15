@@ -18,3 +18,10 @@ The storage conditions for derived data sets are applied with OR conditions.
 
 - charged jets with R<=0.4 and pT,subtracted > 19 GeV
 - trigger tracks with pT > 15 GeV (95%), 5GeV (5%)
+
+### O-O (JE_LHC25ae_pass2_CEWSJ10_FJ12_CL8_TTSig15_TTRef5)
+
+- charged jets with R <= 0.4 and pT,subtracted > 10 GeV
+- full jets with R <= 0.4 and pT > 12 GeV
+- clusters with energy > 8 GeV
+- trigger tracks with pT > 15 GeV (95%), 5 GeV (5%)
